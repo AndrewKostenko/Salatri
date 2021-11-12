@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: $font-size;
+	font-weight: 500;
+	font-family: $font-family;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+// ===============================================================================================================
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: $container-width + $container-padding * 2;
+	padding: 0 $container-padding;
+	margin: 0 auto;
+}
+
+.button {
+	font-size: 18px;
+	line-height: 27 / 18 * 100%;
+	color: $green;
+	padding: 14px 51px;
+	border-radius: 40px;
+	border: 1px solid $green;
+	transition: 300ms;
+	@media (any-hover: hover) {
+		&:hover {
+			background: rgba(#298d88, 0.3);
+		}
+	}
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 75 / 50 * 100%;
+	span {
+		font-weight: 500;
+		color: $green;
+		text-decoration: underline;
+	}
+}
